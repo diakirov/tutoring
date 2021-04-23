@@ -71,10 +71,6 @@ a:hover {
   text-decoration: none;
 }
 
-ul li {
-  list-style: none;
-}
-
 img {
   vertical-align: top;
 }
@@ -145,6 +141,7 @@ body._lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  border-radius: 5px;
   text-align: center;
   background: #4479D4;
   font-size: 20px;
@@ -161,12 +158,6 @@ body._lock {
 
 .tabs-block__item._active {
   background: #1049A9;
-}
-
-._temp {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
 }
 
 .title {
@@ -199,6 +190,67 @@ body._lock {
   margin: 5px 0;
 }
 
+.spollers-block__body--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spollers-block__body--item {
+  margin: 0 30px;
+}
+
+.practice {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.practice__title {
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.practice__subtitle {
+  text-align: center;
+  color: green;
+  font-size: 30px;
+  margin: 40px 0px 40px 0px;
+}
+
+.practice p {
+  font-size: 16px;
+  text-indent: 30px;
+}
+
+.practice span {
+  color: green;
+  font-style: italic;
+}
+
+.practice ul {
+  margin: 10px 0px 0px 0px;
+  padding: 0 0 0 40px;
+}
+
+.placecode {
+  margin: 0px 0px 0px 20px;
+}
+
+.code {
+  color: navy;
+  font-weight: 400;
+}
+
+.code.t {
+  margin: 0px 0px 0px 20px;
+}
+
+.warn {
+  color: #953434;
+}
+
 @media (max-width: 1182px) {
   ._container {
     max-width: 970px;
@@ -215,5 +267,15 @@ body._lock {
   ._container {
     max-width: none;
     padding: 0 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .spollers-block__body--row {
+    display: block;
+  }
+
+  .spollers-block__body img {
+    width: 100%;
   }
 }
